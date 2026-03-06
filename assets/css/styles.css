@@ -605,8 +605,8 @@ img {
   row-gap: 1rem;
 }
 .work__data{
-  display: flex;
-  justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
 }
 .work__title{
   font-size: var(--h2-font-size);
@@ -618,7 +618,8 @@ img {
   color: var(--first-color);
 }
 .work__year{
-  font-size:var(--h1-font-size)
+  font-size:var(--h1-font-size);
+  white-space: nowrap;
 }
 .work__line{
   width: 4px;
@@ -885,6 +886,20 @@ img {
     width: 330px;
     justify-self: center;
   }
+  .work_content {
+        row-gap: 2rem;
+    }
+
+    .work_data {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .work_data span {
+        margin-top: 0.3rem;
+    }
+
 }
 
 @media screen and (min-width : 768px){

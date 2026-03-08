@@ -902,7 +902,7 @@ img {
 
 }
 
-@media screen and (max-width: 576px){
+/* @media screen and (max-width: 576px){
   .work__data{
     flex-direction: column;
     row-gap: .5rem;
@@ -919,7 +919,7 @@ img {
   .work__area{
     padding-left: .75rem;
   }
-}
+} */
 
 @media screen and (min-width : 768px){
   .home__container{

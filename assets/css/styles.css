@@ -902,6 +902,25 @@ img {
 
 }
 
+@media screen and (max-width: 576px){
+  .work__data{
+    flex-direction: column;
+    row-gap: .5rem;
+  }
+
+  .work__year{
+    font-size: var(--h2-font-size);
+  }
+  .work__tabs{
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .work__area{
+    padding-left: .75rem;
+  }
+}
+
 @media screen and (min-width : 768px){
   .home__container{
     width: 600px;

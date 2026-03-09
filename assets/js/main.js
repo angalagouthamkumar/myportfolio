@@ -154,6 +154,7 @@ const scrollActive = () => {
 
 window.addEventListener('scroll', scrollActive);
 
+
 /*=============== CUSTOM CURSOR ===============*/
 
 
@@ -161,3 +162,34 @@ window.addEventListener('scroll', scrollActive);
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+/*=============== INTRO TEXT ANIMATION ===============*/
+
+function splitIntroText(){
+  const text = document.querySelector(".intro-text")
+  const content = text.textContent
+
+  text.innerHTML = content
+    .split("")
+    .map(c => `<span>${c === " " ? "&nbsp;" : c}</span>`)
+    .join("")
+}
+
+splitIntroText()
+
+gsap.from(".intro-text span",{
+  y:80,
+  opacity:0,
+  stagger:0.05,
+  duration:1.2,
+  ease:"power3.out"
+})
+
+gsap.to(".intro",{
+  opacity:0,
+  delay:2.5,
+  duration:1,
+  onComplete:()=>{
+    document.querySelector(".intro").style.display="none"
+  }
+})

@@ -1126,51 +1126,24 @@ img {
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 /* Custom cursor is hidden for mobile devices */
 
-/*=============== INTRO SCREEN ===============*/
-
-
-/* .intro-text{
-  color:white;
-  font-size: clamp(2rem, 6vw, 4rem);
-  text-align:center;
-  line-height:1.2;
-  padding:0 20px;
-} */
- /*=============== INTRO SCREEN ===============*/
-
-/* INTRO SCREEN */
-
-/* #intro-loader {
-  position: fixed;
-  inset: 0;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  color: white;
-  overflow: hidden;
-}
 
 .work__icon {
     font-size: 1.25rem;
-    color: var(--first-color); /* Uses your primary purple/blue theme color */
+    color: var(--first-color);
     transition: all .3s ease;
     display: inline-flex;
     padding: 4px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.05); /* Subtle background box */
+    background-color: rgba(255, 255, 255, 0.05); 
 }
 
-/* Hover Effects */
 .work__icon:hover {
     color: #fff;
-    background-color: var(--first-color); /* Fills background on hover */
-    transform: translateY(-2px) rotate(15deg); /* Playful lift and tilt */
+    /* background-color: var(--first-color); Fills background on hover */
+    /* transform: translateY(-2px) rotate(15deg); Playful lift and tilt */
     box-shadow: 0 4px 12px rgba(var(--first-color-rgb), 0.3); /* Soft glow */
 }
 
-/* Optional: Active state for touch devices */
-.work__icon:active {
+/* .work__icon:active {
     transform: scale(0.9);
-}
+} */
